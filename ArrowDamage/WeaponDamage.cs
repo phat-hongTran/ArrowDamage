@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ArrowDamage
 {
-    class WeaponDamage
+    abstract class WeaponDamage
     {
         /// <summary>
         /// Contains the calculated damage.
@@ -55,7 +55,7 @@ namespace ArrowDamage
         /// <summary>
         /// Calculates the damage based on the current properties.
         /// </summary>
-        protected virtual void CalculateDamage() { /* the subclass overrides this */ }
+        protected abstract void CalculateDamage();
 
         public WeaponDamage(int startingRoll)
         {
